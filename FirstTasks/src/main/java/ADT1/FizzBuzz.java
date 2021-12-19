@@ -10,10 +10,12 @@ public class FizzBuzz {
         fizzBuzz(number);
 
     }
-    public static void fizzBuzz(int number){
-        if (number % 3 == 0){
+
+    public static void fizzBuzz(int number) {
+        if (number % 3 == 0) {
             System.out.print("Fizz");
-        } if (number % 5 == 0){
+        }
+        if (number % 5 == 0) {
             System.out.print("Buzz");
         }
         System.out.println();

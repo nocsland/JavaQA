@@ -14,6 +14,7 @@ public class TimePlusSeconds {
 
     }
 
+
     public static void timePlusInterval(int h, int m, int s, int interval) {
         int sumSeconds = h * 3600 + m * 60 + s + interval;
         int second = (sumSeconds) % 60;
