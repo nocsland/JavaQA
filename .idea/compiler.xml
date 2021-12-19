@@ -9,8 +9,8 @@
         <module name="FirstTasks" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17">
-      <module name="FirstTasks" target="17" />
+    <bytecodeTargetLevel>
+      <module name="FirstTasks" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
