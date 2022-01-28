@@ -1,12 +1,12 @@
 package CW3;
 
-public class SetConstructor {
+public class Constructor {
     private String color;
     Integer seatsCount;
     private String driveType;
     private Double engineVolume;
 
-    public SetConstructor() {
+    public Constructor() {
         this.driveType = "Переднеприводный";
         this.color = "Коричневый";
         this.seatsCount = 5;

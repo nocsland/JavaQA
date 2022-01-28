@@ -2,7 +2,7 @@ package CW3;
 
 
 // Cтатический метод
-public class SetStatic {
+public class Static {
     private String color;
     private String driveType;
     private Double engineVolume;
@@ -10,7 +10,7 @@ public class SetStatic {
 
 
 
-    public SetStatic() {
+    public Static() {
         this.color = "Коричневый";
         count++;
 
@@ -18,7 +18,7 @@ public class SetStatic {
 
 
     public static void setCount(int count) {
-        SetStatic.count = count;
+        Static.count = count;
     }
 
     void setColor(String color) {

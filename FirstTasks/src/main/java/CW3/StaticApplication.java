@@ -2,12 +2,12 @@ package CW3;
 
 public class StaticApplication {
     public static void main(String[] args) throws Exception {
-        SetStatic object1 = new SetStatic();
-        SetStatic object2 = new SetStatic();
-        SetStatic object3 = new SetStatic();
-        SetStatic object4 = new SetStatic();
-        SetStatic object5 = new SetStatic();
-        System.out.println(SetStatic.getCount());
+        Static object1 = new Static();
+        Static object2 = new Static();
+        Static object3 = new Static();
+        Static object4 = new Static();
+        Static object5 = new Static();
+        System.out.println(Static.getCount());
 
 
 
