@@ -1,6 +1,6 @@
 package CW3;
 
-public class YetAnotherCar {
+public class GetterAndSetter {
     // геттеры и сеттеры
     private String color;
     private String brand;
@@ -24,6 +24,10 @@ public class YetAnotherCar {
 
     public Double getEngineVolume(){
         return engineVolume;
+    }
+
+    public String getDriveType(){
+        return driveType;
     }
 
     public void setColor(String color){
