@@ -1,18 +1,18 @@
 package HW3.Matrix;
 
 public class Matrix {
-    private Double numbers[][];
-    private int m;
-    private int n;
+    private final double[][] matrix;
+    private final int m;
+    private final int n;
 
-    public Matrix(Double[][] numbers, int m, int n) {
-        this.numbers = numbers;
+    public Matrix(int m, int n) {
+        this.matrix = new double[m][n];
         this.m = m;
         this.n = n;
     }
 
-    public Double[][] getNumbers() {
-        return numbers;
+    public double[][] getMatrix() {
+        return matrix;
     }
 
     public int getM() {
@@ -24,36 +24,46 @@ public class Matrix {
     }
 
 
-    static Double[][] fillArray(Double array[][]) {
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = (Double) Math.random() * 100;
+    public void fillArray() {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = Math.random() * 10;
             }
         }
-        return array;
-
-
     }
 
 
-    public void matrixOutput(Matrix matrix) {
-        for (int i = 0; i < matrix.getM(); i++) {
-            for (int j = 0; j < matrix.getN(); j++) {
-                System.out.println(matrix.getNumbers()[i][j]);
-            }
 
+    public void outputMatrix() {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+
+                System.out.print(matrix[i][j] + "\t");
+            }
+            System.out.println();
         }
         System.out.println();
     }
 
-    public Matrix resultMultiPlyMatrixByNumber(Matrix multiPliableMatrix, int number) {
-        for (int i = 0; i < multiPliableMatrix.getM(); i++) {
-            for (int j = 0; j < multiPliableMatrix.getN(); j++) {
-                resultMultiPlyMatrixByNumber = multiPliableMatrix.getNumbers()[i][j] * number;
-
+    public void multiPlyMatrixByNumber(int number) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                matrix[i][j] *= number;
 
             }
         }
-        return multiPliableMatrix;
+        System.out.println("Результат умножения матрицы на " + number);
+    }
+
+    public void sumOfMatrices(double[][] matrix) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                this.matrix[i][j] = this.matrix[i][j] + matrix[i][j];
+
+            }
+
+        }
+        System.out.println("Результат сложения матриц");
     }
 }
+
