@@ -15,14 +15,6 @@ public class Matrix {
         return matrix;
     }
 
-    public int getM() {
-        return m;
-    }
-
-    public int getN() {
-        return n;
-    }
-
 
     public void fillArray() {
         for (int i = 0; i < matrix.length; i++) {
@@ -31,7 +23,6 @@ public class Matrix {
             }
         }
     }
-
 
 
     public void outputMatrix() {
