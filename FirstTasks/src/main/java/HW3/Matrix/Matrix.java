@@ -35,6 +35,7 @@ public class Matrix {
 
     }
 
+
     public void matrixOutput(Matrix matrix) {
         for (int i = 0; i < matrix.getM(); i++) {
             for (int j = 0; j < matrix.getN(); j++) {
@@ -43,5 +44,16 @@ public class Matrix {
 
         }
         System.out.println();
+    }
+
+    public Matrix resultMultiPlyMatrixByNumber(Matrix multiPliableMatrix, int number) {
+        for (int i = 0; i < multiPliableMatrix.getM(); i++) {
+            for (int j = 0; j < multiPliableMatrix.getN(); j++) {
+                resultMultiPlyMatrixByNumber = multiPliableMatrix.getNumbers()[i][j] * number;
+
+
+            }
+        }
+        return multiPliableMatrix;
     }
 }
