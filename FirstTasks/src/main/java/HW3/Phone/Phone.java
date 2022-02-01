@@ -38,7 +38,7 @@ public class Phone {
         System.out.printf("Звонит %s %d\n",name, incomingNumber);
     }
 
-    public void sendMessage(int numbers[]){
+    public void sendMessage(int[] numbers){
         for (int i:numbers){
             System.out.print(i + " ");
         }
