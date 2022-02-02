@@ -36,13 +36,13 @@ public class Phone {
     }
 
     // Выводит имя звонящего и номер
-    public void receiveCall(String name,int incomingNumber) {
-        System.out.printf("Звонит %s %d\n",name, incomingNumber);
+    public void receiveCall(String name, int incomingNumber) {
+        System.out.printf("Звонит %s %d\n", name, incomingNumber);
     }
 
     //Выводит список номеров на которые отправлено сообщение
-    public void sendMessage(int[] numbers){
-        for (int i:numbers){
+    public void sendMessage(int[] numbers) {
+        for (int i : numbers) {
             System.out.print(i + " ");
         }
         System.out.println("На эти номера отправлено сообщение");
