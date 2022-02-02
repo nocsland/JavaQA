@@ -15,8 +15,8 @@ public class Application {
         Matrix matrix2 = new Matrix(rowsMatrix, columnsMatrix);
 
         // Заполнить матрицы
-        matrix.fillArray();
-        matrix2.fillArray();
+        matrix.fillMatrix();
+        matrix2.fillMatrix();
 
         // Вывести матрицы в консоль
         matrix.outputMatrix();
